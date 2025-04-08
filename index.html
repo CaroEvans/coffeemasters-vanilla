@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width">
     <title>Coffee Masters</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+    <!-- entry point for js like modern frameworks, scripts folder is a older approach -->
+    <script src="app.js" type="module" defer></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="app.webmanifest">
     <link rel="apple-touch-icon" href="images/icons/icon.png">
@@ -30,7 +32,7 @@
         </nav>
     </header>
 
-    <main>        
+    <main>
     </main>
 
     <template id="menu-page-template">
@@ -67,7 +69,7 @@
     </template>
 
     <template id="details-page-template">
-        <header>   
+        <header>
             <a href="#" onclick="app.router.go('/'); event.preventDefault()">&lt; Back</a>
             <h2></h2>
             <a></a>
